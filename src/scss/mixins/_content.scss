@@ -1,0 +1,21 @@
+@mixin subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--cs-gold);
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        left: 0;
+        top: calc(50% - 3px);
+        background-color: var(--cs-gold);
+    }
+}

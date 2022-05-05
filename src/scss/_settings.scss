@@ -68,6 +68,11 @@ a {
   clip: rect(0 0 0 0);
 }
 
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 0 var(--container-offset);

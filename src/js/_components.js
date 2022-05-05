@@ -1,1 +1,2 @@
-console.log('components');
+import initSliders from './components/initSliders';
+import headerScrollFixed from './components/fixedHeader';

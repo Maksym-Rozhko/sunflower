@@ -6,6 +6,12 @@
   }
 }
 
+@mixin large-desktop {
+  @media (max-width : 1680px) {
+    @content;
+  }
+}
+
 @mixin big-desktop {
   @media (max-width: (1440px)) {
     @content;
@@ -14,6 +20,12 @@
 
 @mixin tablet {
   @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin middle-table {
+  @media (max-width: 992px) {
     @content;
   }
 }
@@ -32,6 +44,12 @@
 
 @mixin small-mobile {
   @media (max-width: (375px)) {
+    @content;
+  }
+}
+
+@mixin to-small-mobile {
+  @media (max-width: (360px)) {
     @content;
   }
 }
