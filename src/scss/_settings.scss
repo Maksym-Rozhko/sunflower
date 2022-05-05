@@ -10,6 +10,9 @@ html {
 
 body {
   font-family: var(--font-family, sans-serif);
+  font-size: 16px;
+  line-height: 19px;
+  background-color: var(--cs-body-bg);
 }
 
 img {
@@ -69,6 +72,7 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+  width: 95%;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -92,3 +96,8 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+::-webkit-scrollbar {width: 12px;height: 12px;}
+::-webkit-scrollbar-track-piece {background:rgba(0,0,0,0);}
+::-webkit-scrollbar-thumb:vertical {height:10px;background:var(--cs-gold);}
+::-webkit-scrollbar-thumb:vertical:hover {background:var(--cs-text);}

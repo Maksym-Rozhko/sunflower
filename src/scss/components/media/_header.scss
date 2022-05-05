@@ -1,0 +1,50 @@
+@include tablet {
+    .header {
+        .nav ul li:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        .socials {
+            margin-left: 25px;
+            margin-right: 10px;
+            gap: 7px;
+        }
+
+        .lang {
+            padding-left: 10px;
+        }
+    }
+}
+
+@include small-tablet {
+    .header {
+        &__right-box {
+            display: none;
+        }
+
+        .burger {
+            display: flex;
+        }
+    }
+}
+
+@include mobile {
+    .header .mobile-menu .lang {
+        margin-right: 65px;
+    }
+}
+
+@include small-mobile {
+    .header {
+        .mobile-menu {
+            .nav {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .contacts {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -5,4 +5,7 @@
 @import "settings";
 // подключения компонентов страницы
 @import "./components/header";
-// @import "./mixins/burger";
+
+// подкоючение медиа 
+@import "./components/media/header";
+@import "./mixins/burger";
