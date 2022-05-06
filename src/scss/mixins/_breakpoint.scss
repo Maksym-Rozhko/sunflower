@@ -47,9 +47,3 @@
     @content;
   }
 }
-
-@mixin to-small-mobile {
-  @media (max-width: (360px)) {
-    @content;
-  }
-}
