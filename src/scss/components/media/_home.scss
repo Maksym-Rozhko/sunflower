@@ -73,6 +73,11 @@
             margin: 0 auto;
         }
     }
+    .our-projects { 
+        .projects-slider {
+            max-width: 1180px;
+        }
+    }
 }
 
 @include tablet {
@@ -121,6 +126,12 @@
     .how-help {
         &__menu {
             width: inherit;
+        }
+    }
+
+    .our-projects { 
+        .projects-slider {
+            max-width: 780px;
         }
     }
 }
@@ -480,6 +491,27 @@
                 &__link {
                     margin-left: 0;
                 }
+            }
+        }
+    }
+    .our-projects { 
+        background-image: url('../../img/icon/proj-bg-mob.svg');
+        padding: 60px 0;
+
+        .titles-wrap {
+            .title {
+                font-size: 36px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+                max-width: 270px;
+            }
+        }
+
+        .projects-slider {
+            max-width: 380px;
+
+            .swiper-pagination {
+                margin-top: 30px;
             }
         }
     }
