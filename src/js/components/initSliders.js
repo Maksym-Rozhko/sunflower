@@ -35,3 +35,28 @@ new Swiper('.swiper.projects-slider', {
         }
     },
 });
+
+new Swiper('.swiper.news-slider', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        575: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1440: {
+          slidesPerView: 4,
+        }
+    },
+});
