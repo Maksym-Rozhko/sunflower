@@ -442,11 +442,14 @@
         </div>
     </section>
     <section class="section banner">
-        <!-- <img src="../img/banner.jpg" alt="Sunflower" class="banner__top"> -->
         <div class="wrapper">
             <div class="banner__container">
                 <div class="img-box left-img">
-                    <img src="../img/title-img-1.png" alt="найменша дoбра справа краще, ніж найбільший намір">
+                    <picture>
+                        <source srcset="../img/title-img-1.png" type="image/avif">
+                        <source srcset="../img/title-img-1.png" type="image/webp">
+                        <img src="../img/title-img-1.png" alt="найменша дoбра справа краще, ніж найбільший намір">
+                    </picture>
                 </div>
                 <h2 class="banner__title">
                     найменша<br> д<img src="../img/icon/flower-gold.svg" alt="иконка цветок.">бра 
@@ -454,8 +457,53 @@
                     <span class="banner__title-author">(Кант)</span>
                 </h2>
                 <div class="img-box right-img">
-                    <img class="desk" src="../img/title-img-2.png" alt="найменша дoбра справа краще, ніж найбільший намір">
-                    <img class="mob" src="../img/title-img-2-mob.png" alt="найменша дoбра справа краще, ніж найбільший намір">
+                    <picture>
+                        <source srcset="../img/title-img-2.png" type="image/avif">
+                        <source srcset="../img/title-img-2.png" type="image/webp">
+                        <img class="desk" src="../img/title-img-2.png" alt="найменша дoбра справа краще, ніж найбільший намір">
+                    </picture>
+                    <picture>
+                        <source srcset="../img/title-img-2-mob.png" type="image/avif">
+                        <source srcset="../img/title-img-2-mob.png" type="image/webp">
+                        <img class="mob" src="../img/title-img-2-mob.png" alt="найменша дoбра справа краще, ніж найбільший намір">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contacts">
+        <div class="wrapper">
+            <h2 class="title title-mob">
+                Хочете допомогти, але так і не розібрались як<br>саме це зробити?
+            </h2>
+            <div class="contacts__container">
+                <picture>
+                    <source srcset="../img/girl.png" type="image/avif">
+                    <source srcset="../img/girl.png" type="image/webp">
+                    <img class="img" src="../img/girl.png" alt="изображение девушка">
+                </picture>
+                <div class="contacts__content">
+                    <h2 class="title">
+                        Хочете допомогти, але так і не розібрались як<br>саме це зробити?
+                    </h2>
+                    <div class="contacts__info">
+                        <div class="phones">
+                            <h3 class="contacts__info-title">
+                                Телефонуйте за номером:
+                            </h3>
+                            <a href="tel:+380682819550" class="contacts__info-link">
+                                +38 (068) 281-95-50
+                            </a>
+                        </div>
+                        <div class="mail">
+                            <h3 class="contacts__info-title">
+                                Пишіть на електронну адресу:
+                            </h3>
+                            <a href="mailto:sunuaflower@gmail.com" class="contacts__info-link">
+                                sunuaflower@gmail.com
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
