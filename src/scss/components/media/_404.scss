@@ -1,0 +1,34 @@
+@include tablet {
+    .error-page {
+        .error {
+            padding-top: 150px;
+            padding-bottom: 400px;
+        }
+    }
+}
+
+@include small-tablet {
+    .error-page {
+        height: 100vh;
+
+        .error {
+            padding-top: 80px;
+            padding-bottom: 700px;
+            background-position: center;
+
+            &__title {
+                justify-content: center;
+            }
+            
+            .text {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .btn-transparent {
+                margin: 0 auto;
+            }
+        }
+    }
+}

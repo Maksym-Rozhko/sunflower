@@ -10,6 +10,7 @@
 @import "./components/about";
 @import "./components/news";
 @import "./components/one-news";
+@import "./components/404.scss";
 
 // подкоючение медиа 
 @import "./components/media/header";
@@ -18,4 +19,5 @@
 @import "./components/media/about";
 @import "./components/media/news";
 @import "./components/media/one-news";
+@import "./components/media/404.scss";
 @import "./mixins/burger";

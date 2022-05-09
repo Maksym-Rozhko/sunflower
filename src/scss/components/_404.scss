@@ -1,0 +1,44 @@
+.error-page {
+    .inner-section {
+        padding-top: 86px;
+        margin-bottom: 0;
+    }
+
+    .error {
+        background-image: url('../../img/icon/error-bg.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        padding: 355px 0;
+
+        &__container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 90%;
+            letter-spacing: -0.06em;
+            text-transform: uppercase;
+            color: var(--cs-gold);
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .text {
+            @include text;
+            max-width: 495px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .btn-transparent {
+            @include btn-transparent;
+        }
+    }
+}
