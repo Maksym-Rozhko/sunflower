@@ -1,0 +1,114 @@
+.news {
+    margin-bottom: 120px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px 20px;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        padding: 290px 10px 10px 10px;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 380px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__content {
+        background-color: var(--cs-light);
+        border-radius: 10px;
+        padding: 39px 30px 30px 30px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: var(--cs-text);
+        max-width: 240px;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__link {
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        padding: 14px 21px;
+        position: relative;
+        transition: all ease-in-out .4s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: all ease-in-out .4s;
+        }
+    }
+
+    &__link.news__want-help {
+        background-color: var(--cs-blue);
+        color: var(--cs-white);
+        margin-right: 19px;
+        max-width: 180px;
+        width: 100%;
+        border: 1px solid transparent;
+
+        &::after {
+            background-image: url('../../img/icon/heart.svg');
+            width: 10px;
+            height: 9px;
+            right: 15px;
+            top: calc(50% - 4px);
+        }
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid  var(--cs-blue);
+            color:  var(--cs-blue);
+
+            &::after {
+                filter: invert(1);
+            }
+        }
+    }
+
+    &__link.news__read-more {
+        padding-left: 0;
+        margin-right: auto;
+        color: var(--cs-blue);
+        
+        &::after {
+            background-image: url('../../img/icon/arrow-more.svg');
+            width: 8px;
+            height: 8px;
+            right: 7px;
+            top: calc(50% - 4px);
+            background-size: contain;
+        }
+
+        &:hover {
+            text-decoration: underline;
+
+            &::after {
+                transform: scale(1.2) translateX(5px);
+            }
+        }
+    }
+}

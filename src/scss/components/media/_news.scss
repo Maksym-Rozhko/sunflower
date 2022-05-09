@@ -1,0 +1,39 @@
+@include big-desktop {
+    .news {
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@include tablet {
+    .news {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 15px;
+        }
+    }
+}
+
+@include small-tablet {
+    .news {
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+    }
+}
+
+@include mobile {
+    .news {
+        margin-bottom: 60px;
+
+        &__container {
+            margin-bottom: 25px;
+        }
+    
+        &__content {
+            padding: 39px 24px 30px 24px;
+        }
+    }
+}
