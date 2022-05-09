@@ -104,6 +104,7 @@
         &__container {
             .img {
                 max-width: 460px;
+                bottom: -85px;
             }
         }
 
@@ -255,8 +256,9 @@
         }
     }
     .contacts {
+        padding-top: 60px;
         margin-bottom: 90px;
-        
+
         .title.title-mob {
             display: block;
             margin-left: auto;
@@ -271,6 +273,8 @@
 
             .img {
                 max-width: 460px;
+                position: static;
+                bottom: 0;
             }
         }
 
@@ -699,8 +703,6 @@
         }
     }
     .contacts {
-        padding-top: 60px;
-
         &::before {
             content: none;
         }
@@ -709,6 +711,7 @@
             width: 126px;
             height: 262px;
             bottom: -180px;
+            right: -20px;
         }
 
         .title.title-mob {

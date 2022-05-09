@@ -1,0 +1,95 @@
+.footer {
+    position: relative;
+    background-image: url('../../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 28px;
+
+    .logo-link {
+        @include flex-all-center;
+        margin-bottom: 40px;
+    }
+
+    &__container {
+        padding-top: 24px;
+        border-top: 1px solid var(--cs-light-gold);
+    }
+
+    &__bottom {
+        @include flex-v-center;
+    }
+
+    .copyright {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--cs-light);
+        margin-right: 240px;
+    }
+
+    .nav ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+
+        li a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: var(--cs-light);
+            transition: all ease-in-out .4s;
+        }
+
+        li:hover a {
+            color: var(--cs-text);
+        }
+
+        li.active a  {
+            color: var(--cs-text);
+        }
+
+        li:not(:last-child) {
+            margin-right: 42px;
+        }
+    }
+
+    .scroll-top {
+        width: 52px;
+        height: 52px;
+        background: rgba(248, 242, 235, .2);
+        backdrop-filter: blur(50px);
+        border-radius: 50%;
+        position: absolute;
+        right: 114px;
+        bottom: 45px;
+        z-index: 1;
+        transition: all ease-in-out .4s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border: solid var(--cs-light);
+            border-width: 0 2px 2px 0;
+            padding: 5px;
+            transform: rotate(225deg);
+            top: calc(50% - 3px);
+            left: calc(50% - 5px);
+            transition: all ease-in-out .4s;
+        }
+
+        &:hover {
+            background: rgba(248, 242, 235, .7);
+
+            &::before {
+                border: solid var(--cs-gold);
+                border-width: 0 2px 2px 0;
+            }
+        }
+    }
+}

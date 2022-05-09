@@ -861,7 +861,6 @@
 
 .contacts {
     position: relative;
-    padding-top: 105px;
     border-top: 1px solid var(--cs-middle);
 
     &::before {
@@ -896,7 +895,7 @@
         @include title;
         max-width: 600px;
         margin-top: 0;
-        margin-bottom: 23px;
+        margin-bottom: 53px;
         padding-bottom: 30px;
         border-bottom: 1px solid var(--cs-light-gold);
 
@@ -911,6 +910,11 @@
 
     &__container {
         @include flex-v-center;
+
+        .img {
+            position: relative;
+            bottom: -145px;
+        }
     }
 
     &__content {
