@@ -102,6 +102,20 @@ a {
   position: relative;
 }
 
+.inner-section {
+  padding-top: 164px;
+  margin-bottom: 90px;
+}
+
+.section-bg.inner-section {
+  background-position: top;
+}
+
+.inner-title {
+  @include inner-title;
+  text-align: center;
+}
+
 ::-webkit-scrollbar {width: 12px;height: 12px;}
 ::-webkit-scrollbar-track-piece {background:rgba(0,0,0,0);}
 ::-webkit-scrollbar-thumb:vertical {height:10px;background:var(--cs-gold);}

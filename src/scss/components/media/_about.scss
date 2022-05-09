@@ -1,0 +1,126 @@
+@include big-desktop {
+    .about {
+        .large-phone {
+            &__container {
+                &::after {
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .inner-title {
+        font-size: 50px;
+    }
+    .about {
+        .content {
+            &__descr {
+                max-width: 480px;
+            }
+        }
+        .large-phone {
+            background-image: url('../../../img/icon/ellipse.svg');
+            padding-top: 81px;
+            padding-bottom: 120px;
+            
+            &__container {
+                padding-top: 0;
+                padding-bottom: 0;
+
+                &::after {
+                    right: calc(50% - 100px);
+                    transform: rotate(-105deg);
+                    top: 140px;
+                    width: 234px;
+                    height: 234px;
+                }
+            }
+
+            &__link {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .about {
+        .content {
+            &__img-text {
+                flex-direction: column;
+                align-items: flex-start;
+                
+                .content__descr {
+                    margin-left: 0;
+                    margin-top: 40px;
+                    margin-bottom: 16px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 0px;
+                }
+    
+                &:nth-child(even) {
+                    flex-direction: column-reverse;
+    
+                    .content__descr {
+                        margin-right: 0;
+                    }
+                }
+            }
+            &__descr {
+                max-width: inherit;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .inner-section {
+        padding-top: 140px;
+        margin-bottom: 60px;
+    }
+    .section-bg.inner-section {
+        background-size: auto;
+    }
+    .inner-title {
+        font-size: 36px;
+        padding-bottom: 25px;
+    }
+    .about {
+        .content {
+            margin-bottom: 60px;
+        }
+        .large-phone {
+
+            &__container {
+
+                &::after {
+                    top: 190px;
+                }
+            }
+
+            &__link {
+                font-size: 36px;
+            }
+        }
+        .another-page {
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@include small-mobile {
+    .about {
+        .large-phone {
+            &__container {
+                &::after {
+                    top: 240px;
+                }
+            }
+        }
+    }
+}
