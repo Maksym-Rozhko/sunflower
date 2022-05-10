@@ -431,7 +431,7 @@
 
 @include mobile {
     .main-screen {
-        background-image: url('../../../img/main-bg-mob.png');
+        background-image: url('../../../images/main-bg-mob.png');
         padding-bottom: 25px;
         margin-bottom: 60px;
 
@@ -487,7 +487,7 @@
         }
 
         &__flower {
-            background-image: url('../../../img/icon/flower-mob.svg');
+            background-image: url('../../../images/icon/flower-mob.svg');
             max-width: 594px;
             width: 100%;
             height: 488px;
@@ -628,7 +628,7 @@
         }
     }
     .our-projects { 
-        background-image: url('../../img/icon/proj-bg-mob.svg');
+        background-image: url('../../images/icon/proj-bg-mob.svg');
         padding: 60px 0;
 
         .titles-wrap {
