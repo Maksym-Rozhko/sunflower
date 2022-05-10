@@ -2,7 +2,7 @@
     .error-page {
         .error {
             padding-top: 150px;
-            padding-bottom: 400px;
+            justify-content: flex-start;
         }
     }
 }
@@ -13,7 +13,7 @@
 
         .error {
             padding-top: 80px;
-            padding-bottom: 700px;
+            justify-content: flex-start;
             background-position: center;
 
             &__title {
