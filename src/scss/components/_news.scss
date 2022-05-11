@@ -71,7 +71,7 @@
         border: 1px solid transparent;
 
         &::after {
-            background-image: url('../../images/icon/heart.svg');
+            background-image: url('../images/icon/heart.svg');
             width: 10px;
             height: 9px;
             right: 15px;
@@ -95,7 +95,7 @@
         color: var(--cs-blue);
         
         &::after {
-            background-image: url('../../images/icon/arrow-more.svg');
+            background-image: url('../images/icon/arrow-more.svg');
             width: 8px;
             height: 8px;
             right: 7px;
